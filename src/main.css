@@ -1,0 +1,39 @@
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4rem 20rem 1fr;
+  grid-template-rows: 1fr 4rem;
+}
+
+#tabs {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+#toolbox {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+}
+
+#renderer {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#controller {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.tab-selector {
+  cursor: pointer;
+}
+
+#progress-bar {
+  display: flex;
+}
+
+#progress-bar-range {
+  flex-grow: 8;
+}
